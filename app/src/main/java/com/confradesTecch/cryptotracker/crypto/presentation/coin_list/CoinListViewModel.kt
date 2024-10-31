@@ -44,8 +44,6 @@ class CoinListViewModel(
             is CoinListAction.onCoinClick -> {
                 selectCoin(action.coinUi)
             }
-
-            is CoinListAction.onRefresh -> loadCoins()
         }
     }
 
