@@ -29,6 +29,7 @@
           <option name="api" value="34" />
           <option name="brand" value="Lenovo" />
           <option name="codename" value="TB370FU" />
+          <option name="formFactor" value="Tablet" />
           <option name="id" value="TB370FU" />
           <option name="manufacturer" value="Lenovo" />
           <option name="name" value="Tab P12" />
