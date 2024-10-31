@@ -6,6 +6,7 @@ import com.confradesTecch.cryptotracker.crypto.domain.Coin
 import com.confradesTecch.cryptotracker.crypto.domain.CoinPrice
 import java.time.Instant
 import java.time.ZoneId
+import java.util.Locale
 
 fun CoinDto.toCoin(): Coin {
     return Coin(
@@ -24,6 +25,6 @@ fun CoinPriceDto.toCoinPrice(): CoinPrice {
         priceUsd = priceUsd,
         dateTime = Instant
             .ofEpochMilli(time)
-            .atZone(ZoneId.of("UTC"))
+            .atZone(ZoneId.systemDefault())
     )
 }
