@@ -25,6 +25,7 @@ import com.confradesTecch.cryptotracker.ui.theme.CryptoTrackerTheme
 fun CoinListScreen(
     state: CoinListState,
     modifier: Modifier = Modifier,
+    onAction: (CoinListAction) -> Unit
 ) {
     if (state.isLoading) {
         Box(
@@ -43,7 +44,9 @@ fun CoinListScreen(
                 CoinListItem(
                     modifier = Modifier.fillMaxWidth(),
                     coinUi = coinUi,
-                    onClick = { /*TODO*/ }
+                    onClick = {
+                        onAction(CoinListAction.onCoinClick(coinUi))
+                    }
                 )
                 HorizontalDivider()
             }
@@ -64,7 +67,8 @@ private fun CoinListScreenPreview() {
                 coins = (1..10).map {
                     previewCoin.copy(id = it.toString())
                 }
-            )
+            ),
+            onAction = {}
         )
     }
 }
