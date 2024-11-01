@@ -1,7 +1,6 @@
 ### 🏗️ CryptorTracker project built on [The Best Practice Guide to Android Architecture](https://pl-coding.com/) </br></br>
 
-
-This is an Android that track some cryptocurrencies prices📈 with Android Arch best practices [2024]. The app also provides graphs and charts to help users visualize crypto prices changes within last 6 days.
+Android application that tracks some cryptocurrency's prices📈 with Android Arch best practices [2024]. The app also provides graphs and charts to help users visualize crypto price changes within the last 6 days.
 
 ## ⚡ Technologies & Tools:
 
